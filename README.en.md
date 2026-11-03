@@ -202,7 +202,7 @@ captions to this part”, watch it happen live in the preview.
 
 | Component | Needed for | Notes |
 |---|---|---|
-| Node.js ≥ 20 | everything | |
+| Node.js ≥ 22.12 | everything | required by the current Electron/rebuild toolchain in the lockfile |
 | ffmpeg + ffprobe | import, audio mix, export | any recent build in PATH |
 | python3 + [faster-whisper](https://github.com/SYSTRAN/faster-whisper) | speech-to-text, auto-captions | `pip install faster-whisper`; models download on first use |
 | [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) | the “Claude” panel | optional; uses your existing login |
@@ -301,7 +301,8 @@ node scripts/check-timeline.mjs   # timeline waveform and overlaps — exactly a
 ## Documentation
 
 - [FEATURES.md](FEATURES.md) — the full feature guide (Russian, 2200+ lines).
-- [CLAUDE.md](CLAUDE.md) — architecture map (also read by Claude Code).
+- [Specs/README.md](Specs/README.md) — development specifications: L0 entry, L1 core, L2 layers/patterns, L3 modules (Russian).
+- [AGENTS.md](AGENTS.md) — primary agent entry point routing to Specs; CLAUDE.md is a thin pointer.
 
 ## Authors
 

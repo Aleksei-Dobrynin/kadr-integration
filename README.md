@@ -208,7 +208,7 @@ Kadr — многодорожечный видеоредактор (Electron + R
 
 | Компонент | Для чего | Примечание |
 |---|---|---|
-| Node.js ≥ 20 | всё | |
+| Node.js ≥ 22.12 | всё | минимум текущего Electron/rebuild toolchain в lockfile |
 | ffmpeg + ffprobe | импорт, аудиомикс, экспорт | любая свежая сборка в PATH |
 | python3 + [faster-whisper](https://github.com/SYSTRAN/faster-whisper) | распознавание речи, авто-субтитры | `pip install faster-whisper`; модели скачаются при первом запуске |
 | [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) | панель «Claude» | опционально; использует ваш существующий вход |
@@ -308,7 +308,8 @@ node scripts/check-timeline.mjs   # волна и перекрытия тайм�
 ## Документация
 
 - [FEATURES.md](FEATURES.md) — полное руководство по функциям (2200+ строк).
-- [CLAUDE.md](CLAUDE.md) — карта архитектуры (её же читает Claude Code).
+- [Specs/README.md](Specs/README.md) — спецификации разработки: L0-вход, L1-ядро, L2-слои/паттерны, L3-модули.
+- [AGENTS.md](AGENTS.md) — основной вход для агентов, направляет в Specs; CLAUDE.md — тонкий указатель.
 
 ## Авторы
 

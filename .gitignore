@@ -19,3 +19,8 @@ python/NOTES-ttsqc.md
 
 # Резервные копии модели, которые «Переобучить» кладёт рядом при каждом прогоне
 python/models/scorer.*.pkl
+
+# Agent tooling: Serena MCP local state and personal OpenCode plugins
+# (machine-specific, never commit; AGENTS.md stays the primary agent doc)
+.serena/
+.opencode/plugins/
