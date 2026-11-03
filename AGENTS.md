@@ -11,6 +11,14 @@
 
 Формат: [authoring-guide](Specs/_meta/spec-authoring-guide.md). Покрытие: [coverage](Specs/_meta/coverage.md). Источники и точность: [sources](Specs/_meta/sources-and-references.md). Фактическая готовность среды: [verification](Specs/_meta/verification.md).
 
+## Сетап сессии
+
+1. Прочитать [newsession.md](newsession.md) § «СТАРТ ОТСЮДА» — handoff прошлых сессий: что закрыто, что осталось, предложенные варианты направления.
+2. Сверить записи о выполненной работе: `git log --oneline -15` и `git log --oneline -- newsession.md` (история handoff'ов); в LLMWiki (`D:/Practice/LLMWiki`) — `sessions/` и `daily-logs/` по проекту `kadr-integration` (пишутся хуками автоматически) + `projects/kadr-integration/index.md` § Recent activity; фактическое состояние среды — [verification](Specs/_meta/verification.md).
+3. Serena: `read_memory("core")`, далее тематические памяти по его указателям (ИИ-трасса B→C — `mem:ai_harness_evolution`).
+4. **Предложить направление текущей сессии**: 2–4 варианта с обоснованием и рекомендацией (из «Вариантов»/«Хвостов» newsession.md и Open Questions Specs) — и ждать выбора оператора; до выбора работу не начинать.
+5. Обязательство handoff: перед паузой длиннее суток — новый датированный блок в newsession.md (закрыто / осталось / prompt следующего окна / уроки); устаревшие блоки зачёркивать `~~…~~`, не удалять.
+
 ## Проект
 
 Рабочий форк `Aleksei-Dobrynin/kadr-integration` от `HelpFreedom/kadr`. Electron + React + TypeScript, GPU/WebGL2-видеоредактор; ffmpeg, Remotion workspace, optional Python STT/TTSQC и встроенный Claude Code. Карта процессов — [DESKTOP_ARCHITECTURE](Specs/desktop/DESKTOP_ARCHITECTURE.md).

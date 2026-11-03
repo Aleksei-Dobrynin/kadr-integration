@@ -73,6 +73,7 @@ npx electron-vite dev -- --remote-debugging-port=9777
 - Для запуска: статика не заменяет запуск Electron, загрузку native node-pty и E2E. Непроверенные возможности перечислены отдельно.
 - `git diff --check`, контроль scoped diff; `package.json`/lockfile не меняются незаметно установкой.
 - Затронутые Specs и references обновлены; факты верификации — в [_meta/verification.md](_meta/verification.md).
+- Длинная пауза (больше суток) — датированный handoff-блок в корневом [newsession.md](../newsession.md): закрыто / осталось / prompt следующего окна / уроки (ритуал — AGENTS.md § «Сетап сессии»).
 
 ## Serena и Wiki
 
